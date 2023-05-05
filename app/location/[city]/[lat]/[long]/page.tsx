@@ -22,7 +22,8 @@ async function WeatherPage({ params: { city, lat, long } }: Props) {
 			current_weather: "true",
 			longitude: long,
 			latitude: lat,
-			timezone: "GMT",
+			timezone: "auto",
+			// temperature_unit: "fahrenheit",
 		},
 	});
 
