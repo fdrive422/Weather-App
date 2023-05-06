@@ -19,7 +19,7 @@ function TempChart({ results }: Props) {
 	const data = hourly.map((hour, i) => ({
 		time: Number(hour),
 		"UV Index": results.hourly.uv_index[i],
-		"Temperature (C)": results.hourly.temperature_2m[i],
+		"Temperature (°C)": results.hourly.temperature_2m[i],
 	}));
 
 	const dataFormatter = (number: number) => `${number}`;
@@ -32,7 +32,7 @@ function TempChart({ results }: Props) {
 				data={data}
 				showLegend
 				index="time"
-				categories={["Temperature (C)", "UV Index"]}
+				categories={["Temperature (°C)", "UV Index"]}
 				colors={["yellow", "rose"]}
 				minValue={0}
 				valueFormatter={dataFormatter}
