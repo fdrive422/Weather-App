@@ -1,6 +1,7 @@
 interface CurrentWeather {
 	is_day: number;
 	temperature: number;
+	temperature_unit: string;
 	time: string;
 	weathercode: number;
 	winddirection: number;
@@ -21,6 +22,7 @@ interface Daily {
 interface DailyUnits {
 	apparent_temperature_max: string;
 	apparent_temperature_min: string;
+	temperature_unit: String
 	sunrise: string;
 	sunset: string;
 	temperature_2m_max: string;
@@ -32,6 +34,7 @@ interface DailyUnits {
 }
 interface Hourly {
 	apparent_temperature: [number];
+	temperature_unit: [number];
 	precipitation: [number];
 	precipitation_probability: [number];
 	rain: [number];

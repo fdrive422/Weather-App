@@ -3,6 +3,8 @@ import CalloutCard from "@/components/CalloutCard";
 import InformationPanel from "@/components/InformationPanel";
 import StatCard from "@/components/StatCard";
 import TempChart from "@/components/TempChart";
+import RainChart from "@/components/RainChart";
+import HumidityChart from "@/components/HumidityChart";
 import fetchWeatherQuery from "@/graphql/queries/fetchWeatherQueries";
 
 type Props = {
@@ -23,7 +25,7 @@ async function WeatherPage({ params: { city, lat, long } }: Props) {
 			longitude: long,
 			latitude: lat,
 			timezone: "auto",
-			// temperature_unit: "fahrenheit",
+			temperature_unit: "fahrenheit",
 		},
 	});
 
@@ -116,8 +118,8 @@ async function WeatherPage({ params: { city, lat, long } }: Props) {
 				<hr className="mb-5" />
 				<div>
 					<TempChart results={results} />
-					{/* RainChart */}
-					{/* HumidityChart */}
+					<RainChart results={results} />
+					<HumidityChart results={results} />
 				</div>
 			</div>
 		</div>
