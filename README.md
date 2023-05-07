@@ -1,3 +1,7 @@
+### <a href="https://openai-weather-fdrive.vercel.app/">LIVE DEMO</a>
+
+![Screen Shot 2023-05-06 at 21 53 10 PM](https://user-images.githubusercontent.com/72363705/236658382-f5cb12d3-5882-42a8-83db-ae0dc72519d4.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
