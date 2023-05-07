@@ -10,9 +10,13 @@ export default function Home() {
 				<Text className="text-6xl font-bold text-center mb-10">
 					Weather AI
 				</Text>
-				<Subtitle className="text-xl text-center">
-					Powered by OpenAI, Next.js 13.3, Tailwind CSS, Termor 2.0 +
-					More!
+				<Subtitle>
+					<p className="text-xl text-center mb-3">
+						Powered by OpenAI, Next.js 13.3, Termor 2.0 + More!
+					</p>
+					<p className="text-md text-center">
+						Developed by: fdrive422
+					</p>
 				</Subtitle>
 
 				<Divider className="my-10" />
