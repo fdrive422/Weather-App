@@ -122,7 +122,7 @@ async function WeatherPage({ params: { city, lat, long } }: Props) {
 								title="Wind Speed"
 								metric={`${results.current_weather.windspeed.toFixed(
 									1
-								)}m/s`}
+								)}mph`}
 								color="cyan"
 							/>
 

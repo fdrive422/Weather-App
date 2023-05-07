@@ -86,5 +86,8 @@ type Query {
 		latitude: String
 		longitude: String
 		timezone: String
-	): Root @rest(endpoint: "https://api.open-meteo.com/v1/forecast")
+	): Root
+		@rest(
+			endpoint: "https://api.open-meteo.com/v1/forecast?temperature_unit=fahrenheit&windspeed_unit=mph"
+		)
 }
