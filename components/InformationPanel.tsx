@@ -14,7 +14,7 @@ function InformationPanel({ city, lat, long, results }: Props) {
 	return (
 		<div className="bg-gradient-to-br from-[#394F68] to-[#183B7E] text-white p-10">
 			<div className="pb-5">
-				<h1 className="text-6xl font-bold pb-2">{decodeURI(city)}</h1>
+				<h1 className="text-5xl font-bold pb-2">{decodeURI(city)}</h1>
 				<p className="text-xs text-gray-400">
 					Long/Lat:{long}, {lat}
 				</p>
@@ -67,7 +67,7 @@ function InformationPanel({ city, lat, long, results }: Props) {
 						height={75}
 					/>
 					<div className="flex items-center justify-between space-x-10">
-						<p className="text-6xl font-semibold">
+						<p className="text-5xl font-semibold">
 							{results.current_weather.temperature.toFixed(1)}°F
 						</p>
 						<p className="text-right font-extralight text-lg">
