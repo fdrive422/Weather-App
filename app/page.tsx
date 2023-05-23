@@ -10,14 +10,12 @@ export default function Home() {
 				<Text className="text-5xl font-bold text-center mb-10">
 					Weather AI
 				</Text>
-				<Subtitle>
-					<p className="text-xl text-center mb-3">
-						Powered by OpenAI, NextJS 13.3, Termor 2.0 + More!
-					</p>
-					<p className="text-md text-center">
-						Developed by: fdrive422
-					</p>
-				</Subtitle>
+				{/* <Subtitle> */}
+				<p className="text-xl text-center mb-3">
+					Powered by OpenAI, Next.js 13.3, Termor 2.0 + More!
+				</p>
+				<p className="text-md text-center">Developed by: fdrive422</p>
+				{/* </Subtitle> */}
 
 				<Divider className="my-10" />
 				<Card className="bg-gradient-to-br from-[#394f68] to-[#183B7E]">
